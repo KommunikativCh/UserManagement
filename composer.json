@@ -1,33 +1,41 @@
 {
-    "name": "sandstorm/usermanagement",
-    "description": "Neos and Flow package for user management, login/logout, password reset and user activation",
-    "type": "neos-package",
-    "keywords": ["user", "login", "logout", "registration", "frontend login", "forgot password", "account", "Neos", "Flow"],
-    "homepage": "https://github.com/sandstorm/UserManagement",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Bastian Heist",
-            "homepage": "https://www.sandstorm.de",
-            "role": "Developer"
-        },
-        {
-            "name": "Sebastian Kurfuerst",
-            "homepage": "https://www.sandstorm.de",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/sandstorm/UserManagement/issues",
-        "source": "https://github.com/sandstorm/UserManagement"
-    },
-    "require": {
-        "neos/flow": "^5.0",
-        "sandstorm/templatemailer": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Sandstorm\\UserManagement\\": "Classes"
-        }
-    }
+	"name" : "kommunikativch/usermanagement",
+	"description" : "Neos and Flow package for user management, login/logout, password reset and user activation",
+	"type" : "neos-package",
+	"keywords" : [
+		"user",
+		"login",
+		"logout",
+		"registration",
+		"frontend login",
+		"forgot password",
+		"account",
+		"Neos",
+		"Flow"
+	],
+	"homepage" : "https://github.com/sandstorm/UserManagement",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Bastian Heist",
+			"homepage" : "https://www.sandstorm.de",
+			"role" : "Developer"
+		}, {
+			"name" : "Sebastian Kurfuerst",
+			"homepage" : "https://www.sandstorm.de",
+			"role" : "Developer"
+		}
+	],
+	"support" : {
+		"issues" : "https://github.com/sandstorm/UserManagement/issues",
+		"source" : "https://github.com/sandstorm/UserManagement"
+	},
+	"require" : {
+		"neos/flow" : "^5.0",
+		"sandstorm/templatemailer" : "^1.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Sandstorm\\UserManagement\\" : "Classes"
+		}
+	}
 }
