@@ -108,7 +108,7 @@ class LoginController extends AbstractAuthenticationController
         $this->emitLogout($this->controllerContext);
 
         $result = $this->redirectTargetService->onLogout($this->controllerContext);
-
+        
         if (is_string($result)) {
             $this->redirectToUriAndShutdown($result);
 
@@ -167,7 +167,7 @@ class LoginController extends AbstractAuthenticationController
     protected function redirectToUriAndShutdown(string $result)
     {
         $escapedUri = htmlentities($result, ENT_QUOTES, 'utf-8');
-
+        
         $response = $this->bootstrap->getActiveRequestHandler()->getHttpResponse(); /** @var  \Neos\Flow\Http\Response $response*/
 
         $response->setHeader('Location', $escapedUri);
